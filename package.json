@@ -1,0 +1,17 @@
+{
+  "name": "upsilon-pet-hotel",
+  "version": "1.0.0",
+  "description": "pet hotel",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "erik,jake,nolan,ahkillah",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "express": "^4.14.0",
+    "pg": "^6.1.2"
+  }
+}

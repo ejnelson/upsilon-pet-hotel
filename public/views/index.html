@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Pet hotel</title>
+    <script src="/vendor/jquery.min.js"></script>
+    <script src="/scripts/client.js"></script>
+    <link rel="stylesheet" href="/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/styles.css"  />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="col-xs-12">Owners and Pets</h1>
+      <h2 class="col-xs-12">Owner Registration</h2>
+      <div class="row">
+        <form id="ownerReg">
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName" name="firstName"/>
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" name="lastName"/>
+          <button class="btn btn-default" type="submit" name="regButton">Register</button>
+        </form>
+      </div>
+      <h2 class="col-xs-12">Pets</h2>
+      <div class="row">
+        <form id="addPet">
+          <label for="ownerName">Owner Name</label>
+          <select name="ownerName">
+            <!-- space for options to be appended -->
+          </select>
+          <label for="petName">Pet Name</label>
+          <input type="text" id="petName" name="petName"/>
+          <label for="breed">Breed</label>
+          <input type="text" id="breed" name="breed"/>
+          <button class="btn btn-default" type="submit" name="petButton">Add Pet</button>
+        </form>
+      </div>
+
+
+    </div>
+  </body>
+</html>
