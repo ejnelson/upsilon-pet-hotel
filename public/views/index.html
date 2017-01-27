@@ -8,33 +8,57 @@
     <link rel="stylesheet" href="styles/styles.css"  />
   </head>
   <body>
-    <div class="container">
-      <h1 class="col-xs-12">Owners and Pets</h1>
-      <h2 class="col-xs-12">Owner Registration</h2>
-      <div class="row">
-        <form id="ownerReg">
-          <label for="firstName">First Name</label>
-          <input type="text" id="firstName" name="firstName"/>
-          <label for="lastName">Last Name</label>
-          <input type="text" id="lastName" name="lastName"/>
-          <button class="btn btn-default" type="submit" name="regButton">Register</button>
-        </form>
-      </div>
-      <h2 class="col-xs-12">Pets</h2>
-      <div class="row">
-        <form id="addPet">
-          <label for="ownerName">Owner Name</label>
-          <select name="ownerName">
-            <!-- space for options to be appended -->
-          </select>
-          <label for="petName">Pet Name</label>
-          <input type="text" id="petName" name="petName"/>
-          <label for="breed">Breed</label>
-          <input type="text" id="breed" name="breed"/>
-          <button class="btn btn-default" type="submit" name="petButton">Add Pet</button>
-        </form>
-      </div>
 
+      <h1 class="col-xs-12">Owners and Pets</h1>
+
+
+    <div class="container">
+      <!-- <div class="row ">
+        <h1 class="col-xs-12">Owners and Pets</h1>
+      </div> -->
+      <div class="row ">
+      <h2 class="col-xs-12">Owner Registration</h2>
+        <form id="ownerReg">
+          <label for="firstName" class="col-xs-4 col-md-2">First Name</label>
+          <input type="text" id="firstName" name="firstName" class="col-xs-8 col-md-4"/>
+          <label for="lastName" class="col-xs-4 col-md-2">Last Name</label>
+          <input type="text" id="lastName" name="lastName" class="col-xs-8 col-md-4"/>
+          <button class="btn btn-default col-xs-2 col-xs-offset-5" type="submit" name="regButton">Register</button>
+        </form>
+      </div>
+      <div class="row ">
+      <h2 class="col-xs-12">Pets</h2>
+
+        <form id="addPet">
+            <label for="ownerName" class="col-xs-4 col-md-2">Owner Name</label>
+            <select id = "select" name="ownerName" class="col-xs-8 col-md-4">
+              <!-- space for options to be appended -->
+
+            </select>
+            <label for="petName" class="col-xs-4 col-md-2">Pet Name</label>
+            <input type="text" id="petName" name="petName" class="col-xs-8 col-md-4"/>
+            <label for="breed" class="col-xs-4 col-md-2">Breed</label>
+            <input type="text" id="breed" name="breed" class="col-xs-8 col-md-4"/>
+            <label for="color" class="col-xs-4 col-md-2">Color</label>
+            <input type="text" id="color" name="color" class="col-xs-8 col-md-4"/>
+          <button class="btn btn-primary col-xs-2 col-xs-offset-5" type="submit" name="petButton">Add Pet</button>
+        </form>
+      </div>
+      <div class="table-responsive">
+        <table class="table table-hover table-striped">
+          <tr>
+            <th>Owner</th>
+            <th>Pet</th>
+            <th>Breed</th>
+            <th>Color</th>
+            <th>Update</th>
+            <th>Delete</th>
+            <th>Check in/out</th>
+          </tr>
+        </table>
+        <table id = "petTable" class="table table-hover table-striped">
+        </table>
+      </div>
 
     </div>
   </body>

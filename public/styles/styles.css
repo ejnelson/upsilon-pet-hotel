@@ -1,3 +1,49 @@
 body{
   margin:none;
+  font-family:'Helvetica',serif;
+}
+h2{
+  margin:10px;
+}
+h1{
+  font-size:35px;
+}
+input,select {
+  background-color:rgb(222, 222, 222);
+  border:none;
+}
+label{
+  text-align: right;
+}
+.table-responsive{
+  margin-top:20px;
+
+}
+#addPet label{
+  font-size:12px;
+}
+button{
+  margin-top:15px;
+}
+input,label,select{
+  margin-bottom:5px;
+}
+.row:nth-child(2),.row:nth-child(1){
+  margin-bottom:10px;
+  padding-bottom:10px;
+  /*border-top:2px solid grey;*/
+
+  padding-left:10px;
+  padding-right:10px;
+}
+h1{
+  background-color: rgb(255, 191, 28);
+  color:white;
+  margin-top:none;
+  padding:20px;
+  top:-20px;
+  padding-left:20px;
+}
+.coolform{
+  display:table-row;
 }
