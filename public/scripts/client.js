@@ -159,8 +159,10 @@ function showStatus(stata) {
 function changeStatus(event) {
   event.preventDefault();
 
+
+
   $.ajax({
-    url: 'router/visits/' + $(this).attr('id'),
+    url: 'router/visits/:id' + $(this).attr('id'),
     type: 'PUT',
     data: $(this).data('status');
     success: getStatus
